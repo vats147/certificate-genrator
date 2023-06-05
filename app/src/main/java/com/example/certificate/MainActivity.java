@@ -121,8 +121,8 @@ public class MainActivity extends AppCompatActivity {
         String path = MediaStore.Images.Media.insertImage(getContentResolver(), certificateBitmap, "Certificate", null);
 
         // Create the sharing intent
-//        Intent i=new Intent(MainActivity.this,activity_certificate.class);
-//        startActivity(i);
+        Intent i=new Intent(MainActivity.this,Sample.class);
+        startActivity(i);
 
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("image/*");
